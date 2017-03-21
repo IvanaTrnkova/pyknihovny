@@ -5,11 +5,12 @@
         <title>Hello!</title>
     </head>
     <body>
-    <!--spesl misto opro promennou-->
-        <h1>Hello {{ name | reverse }}!</h1>
-
-            <a href="{{ url_for('hello') }}">
-                Go back home
-            </a>
+    <!--spesl misto pro promennou v jazyce džinža-->
+        <h1>
+            Hello {{ name | em | safe }}!
+        </h1>
+        <a href="{{ url_for('hello') }}">
+            Go back home
+        </a>
     </body>
 </html>
