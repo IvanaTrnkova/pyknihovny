@@ -6,6 +6,10 @@
     </head>
     <body>
     <!--spesl misto opro promennou-->
-        <h1>Hello {{ name }}!<h1>
+        <h1>Hello {{ name | reverse }}!</h1>
+
+            <a href="{{ url_for('hello') }}">
+                Go back home
+            </a>
     </body>
 </html>

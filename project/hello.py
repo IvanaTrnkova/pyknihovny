@@ -20,6 +20,8 @@ def hello():
 def hello_english(username=None, count=1):
 	return render_template("hello.html", name=username)
 
-
+@app.template_filter
+def reverse(text):
+	return reversed(text)
 
 
